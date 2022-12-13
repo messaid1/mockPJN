@@ -31,7 +31,7 @@ class MockPjnApplicationTests {
         // Meme chose, pour Firefox
         prefs.put("network.cookie.cookieBehavior", 0);
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("window-size=1920x1080", "--headless");
+        options.addArguments("window-size=1920x1080", "--headless", "--no-sandbox");
         options.setExperimentalOption("prefs", prefs);
         driver = new ChromeDriver(options);
     }
