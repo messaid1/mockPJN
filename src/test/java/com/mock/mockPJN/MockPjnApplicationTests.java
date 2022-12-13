@@ -50,5 +50,12 @@ class MockPjnApplicationTests {
         //driver.get("http://www.google.fr");
         //driver.manage().window().maximize();
 	}
+    @Test
+    @DisplayName("Test unique Mehdi")
+    public void TestUniqueMehdi2() {
+        String blabla = "blabla";
+        //driver.get("http://www.google.fr");
+        //driver.manage().window().maximize();
+    }
 
 }
