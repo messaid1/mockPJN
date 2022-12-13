@@ -21,7 +21,7 @@ class MockPjnApplicationTests {
     @BeforeEach
     public void setUp() {
 
-        System.setProperty("webdriver.chrome.driver",   "../chromedriver");
+        System.setProperty("webdriver.chrome.driver",   "../..chromedriver");
         Map<String, Object> prefs = new HashMap<>();
         // permet tous les cookies pour Chrome en deux etapes
         // 1 - allow all cookies
