@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,8 +21,8 @@ class MockPjnApplicationTests {
 
     @BeforeEach
     public void setUp() {
-
-        System.setProperty("webdriver.chrome.driver",   "/tmp/chromedriver");
+        File tempDir = new File("tmp/chromedriver");
+        System.setProperty("webdriver.chrome.driver",   tempDir.getAbsolutePath());
         Map<String, Object> prefs = new HashMap<>();
         // permet tous les cookies pour Chrome en deux etapes
         // 1 - allow all cookies
