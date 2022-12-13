@@ -1,6 +1,7 @@
 package com.mock.mockPJN;
 
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.support.ui.Sleeper;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -19,6 +20,7 @@ class MockPjnApplicationTests {
 
     @BeforeEach
     public void setUp() {
+        /*
         System.setProperty("webdriver.chrome.driver",   "./chromedriver.exe");
         Map<String, Object> prefs = new HashMap<>();
         // permet tous les cookies pour Chrome en deux etapes
@@ -32,19 +34,21 @@ class MockPjnApplicationTests {
         //options.addArguments("window-size=1920x1080", "--headless");
         options.setExperimentalOption("prefs", prefs);
         driver = new ChromeDriver(options);
+         */
     }
 
     @AfterEach
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
 
 
     @Test
     @DisplayName("Test unique Mehdi")
     public void TestUniqueMehdi() {
-        driver.get("http://www.google.fr");
-        driver.manage().window().maximize();
+        String blabla = "blabla";
+        //driver.get("http://www.google.fr");
+        //driver.manage().window().maximize();
 	}
 
 }
