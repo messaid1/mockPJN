@@ -34,8 +34,6 @@ class MockPjnApplicationTests {
         //options.addArguments("window-size=1920x1080", "--headless");
         options.setExperimentalOption("prefs", prefs);
         driver = new ChromeDriver(options);
-
-
     }
 
     @AfterEach
