@@ -12,7 +12,7 @@ public class MockPjnApplication {
 		// SpringApplication.run(MockPjnApplication.class, args);
 		SpringApplication app = new SpringApplication(MockPjnApplication.class);
         app.setDefaultProperties(Collections
-          .singletonMap("server.port", "8083"));
+          .singletonMap("server.port", "8084"));
         app.run(args);
 	}
 
