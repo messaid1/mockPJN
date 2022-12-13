@@ -20,8 +20,8 @@ class MockPjnApplicationTests {
 
     @BeforeEach
     public void setUp() {
-        /*
-        System.setProperty("webdriver.chrome.driver",   "./chromedriver.exe");
+
+        System.setProperty("webdriver.chrome.driver",   "./chromedriver");
         Map<String, Object> prefs = new HashMap<>();
         // permet tous les cookies pour Chrome en deux etapes
         // 1 - allow all cookies
@@ -34,12 +34,12 @@ class MockPjnApplicationTests {
         //options.addArguments("window-size=1920x1080", "--headless");
         options.setExperimentalOption("prefs", prefs);
         driver = new ChromeDriver(options);
-         */
+
     }
 
     @AfterEach
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 
 
@@ -47,8 +47,8 @@ class MockPjnApplicationTests {
     @DisplayName("Test unique Mehdi")
     public void TestUniqueMehdi() {
         String blabla = "blabla";
-        //driver.get("http://www.google.fr");
-        //driver.manage().window().maximize();
+        driver.get("http://www.google.fr");
+        driver.manage().window().maximize();
 	}
     @Test
     @DisplayName("Test unique Mehdi")
